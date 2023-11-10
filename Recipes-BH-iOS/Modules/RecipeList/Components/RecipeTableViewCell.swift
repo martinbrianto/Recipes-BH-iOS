@@ -31,14 +31,19 @@ final class RecipeTableViewCell: UITableViewCell {
     
     // MARK: - Variables
     
+    private let _rxDidTapImage = PublishSubject<Void>()
+    var rxDidTapImage: Observable<Void> { _rxDidTapImage }
+    
     static let reuseID = "RecipeTableViewCell"
     var disposeBag = DisposeBag()
+    private let bindingDisposeBag = DisposeBag()
     
     // MARK: - Inits
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
+        setupGesture()
     }
     
     required init?(coder: NSCoder) {
@@ -66,6 +71,8 @@ final class RecipeTableViewCell: UITableViewCell {
     // MARK: - Setup
     
     private func setupView() {
+        selectionStyle = .none
+        
         contentView.addSubview(thumbnailImageView)
         contentView.addSubview(recipeLabel)
         
@@ -78,5 +85,15 @@ final class RecipeTableViewCell: UITableViewCell {
             make.leading.equalTo(thumbnailImageView.snp.trailing).offset(8)
             make.trailing.top.bottom.equalToSuperview().inset(8)
         }
+    }
+    
+    private func setupGesture() {
+        let tap = UITapGestureRecognizer()
+        tap.rx.event
+            .map({ _ in () })
+            .bind(to: _rxDidTapImage)
+            .disposed(by: bindingDisposeBag)
+        
+        thumbnailImageView.addGestureRecognizer(tap)
     }
 }

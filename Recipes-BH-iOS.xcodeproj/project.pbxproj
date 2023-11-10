@@ -50,6 +50,7 @@
 		AE9863B32AFDE6A800C65579 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B22AFDE6A800C65579 /* RecipeDetail.swift */; };
 		AE9863B62AFDEFF000C65579 /* FirstLetterSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B52AFDEFEF00C65579 /* FirstLetterSelectViewController.swift */; };
 		AE9863B92AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */; };
+		AE9863BC2AFE0AE100C65579 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863BB2AFE0AE100C65579 /* ImageViewerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		AE9863B22AFDE6A800C65579 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
 		AE9863B52AFDEFEF00C65579 /* FirstLetterSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLetterSelectViewController.swift; sourceTree = "<group>"; };
 		AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLetterSelectOptionTableViewCell.swift; sourceTree = "<group>"; };
+		AE9863BB2AFE0AE100C65579 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 		AE9863672AFCF44100C65579 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AE9863BA2AFE0AB300C65579 /* ImageViewer */,
 				AE9863B42AFDEFD100C65579 /* FirstLetterSelect */,
 				AE98639E2AFDDFBD00C65579 /* RecipeList */,
 				AE9863722AFD1AFE00C65579 /* EntryPoint */,
@@ -395,6 +398,14 @@
 				AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		AE9863BA2AFE0AB300C65579 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863BB2AFE0AE100C65579 /* ImageViewerViewController.swift */,
+			);
+			path = ImageViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -564,6 +575,7 @@
 				AE9863862AFD324A00C65579 /* SignInViewModel.swift in Sources */,
 				AE9863972AFD4D5800C65579 /* ApiClient.swift in Sources */,
 				AE9863A82AFDE39200C65579 /* RecipeListRepository.swift in Sources */,
+				AE9863BC2AFE0AE100C65579 /* ImageViewerViewController.swift in Sources */,
 				AE98637E2AFD225A00C65579 /* FormModelValidator.swift in Sources */,
 				AE9863AA2AFDE49C00C65579 /* String+Extension.swift in Sources */,
 				AE9863A02AFDDFD800C65579 /* RecipeListViewModel.swift in Sources */,

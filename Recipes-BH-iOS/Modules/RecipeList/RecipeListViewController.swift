@@ -12,6 +12,13 @@ final class RecipeListViewController: UIViewController {
     
     // MARK: - UI Components
     
+    private let emptyView: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "empty-search")
+        view.isHidden = true
+        return view
+    }()
+    
     private let activityView: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView()
         view.isHidden = true
@@ -75,6 +82,27 @@ final class RecipeListViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    private func presentImageViewer(for imageUrl: String) {
+        let vc = ImageViewerViewController(imageUrl: imageUrl)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false)
+    }
+    
+    private func setEmptyView(isShowing: Bool) {
+        emptyView.isHidden = !isShowing
+        tableView.isHidden = isShowing
+    }
+    
+    private func setLoadingView(isShowing: Bool) {
+        if isShowing {
+            activityView.startAnimating()
+        } else {
+            activityView.stopAnimating()
+        }
+        tableView.isHidden = isShowing
+        activityView.isHidden = !isShowing
+    }
+    
     // MARK: - Setup
     
     private func setupView() {
@@ -84,6 +112,7 @@ final class RecipeListViewController: UIViewController {
         view.backgroundColor = .white
         
         view.addSubview(activityView)
+        view.addSubview(emptyView)
         view.addSubview(firstLetterTitleLabel)
         view.addSubview(tableView)
         
@@ -100,19 +129,27 @@ final class RecipeListViewController: UIViewController {
             make.top.equalTo(firstLetterTitleLabel.snp.bottom).offset(16)
             make.leading.bottom.trailing.equalTo(view.safeAreaLayoutGuide).inset(8)
         }
+        
+        emptyView.snp.makeConstraints { make in
+            make.size.equalTo(300)
+            make.centerY.centerX.equalTo(view.safeAreaLayoutGuide)
+        }
     }
     
     private func setupBinding() {
         viewModel.rxViewState
             .asDriver(onErrorDriveWith: .empty())
             .drive(onNext: { [weak self] state in
+                guard let self else { return }
                 switch state {
                 case .loading:
-                    print("loading")
+                    self.setLoadingView(isShowing: true)
                 case .loaded:
-                    print("loaded")
-                    self?.tableView.reloadData()
+                    self.setLoadingView(isShowing: false)
+                    self.setEmptyView(isShowing: self.viewModel.recipes.isEmpty)
+                    self.tableView.reloadData()
                 case let .error(errorDesc):
+                    self.setLoadingView(isShowing: false)
                     print(errorDesc)
                 }
             })
@@ -145,6 +182,13 @@ extension RecipeListViewController: UITableViewDataSource {
         
         cell.configure(recipeName: cellData.strMeal, thumbnailUrl: cellData.strMealThumb)
         
+        cell.rxDidTapImage
+            .asDriver(onErrorDriveWith: .empty())
+            .drive(onNext: { [weak self] in
+                self?.presentImageViewer(for: cellData.strMealThumb)
+            })
+            .disposed(by: cell.disposeBag)
+        
         return cell
     }
     
@@ -155,5 +199,6 @@ extension RecipeListViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension RecipeListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
 }
