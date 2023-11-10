@@ -69,6 +69,8 @@ final class CoreDataManagerImpl: CoreDataManager {
     }
     
     func getUserCredential(email: String) -> UserCredential? {
+        let email = email.lowercased() //lowercase email to make case insensitive
+        
         let context = persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<UserCredential> = UserCredential.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "email == %@", email)
