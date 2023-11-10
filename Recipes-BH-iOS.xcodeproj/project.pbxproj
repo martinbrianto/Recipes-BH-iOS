@@ -9,14 +9,47 @@
 /* Begin PBXBuildFile section */
 		AE98631C2AFCD8EE00C65579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98631B2AFCD8EE00C65579 /* AppDelegate.swift */; };
 		AE98631E2AFCD8EE00C65579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98631D2AFCD8EE00C65579 /* SceneDelegate.swift */; };
-		AE9863202AFCD8EE00C65579 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98631F2AFCD8EE00C65579 /* ViewController.swift */; };
-		AE9863232AFCD8EE00C65579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9863212AFCD8EE00C65579 /* Main.storyboard */; };
 		AE9863262AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9863242AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodeld */; };
 		AE9863282AFCD8F000C65579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9863272AFCD8F000C65579 /* Assets.xcassets */; };
 		AE98632B2AFCD8F000C65579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9863292AFCD8F000C65579 /* LaunchScreen.storyboard */; };
 		AE9863362AFCD8F000C65579 /* Recipes_BH_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863352AFCD8F000C65579 /* Recipes_BH_iOSTests.swift */; };
 		AE9863402AFCD8F000C65579 /* Recipes_BH_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98633F2AFCD8F000C65579 /* Recipes_BH_iOSUITests.swift */; };
 		AE9863422AFCD8F000C65579 /* Recipes_BH_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863412AFCD8F000C65579 /* Recipes_BH_iOSUITestsLaunchTests.swift */; };
+		AE9863522AFCDB2500C65579 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863512AFCDB2500C65579 /* SignUpViewController.swift */; };
+		AE9863552AFCDC0000C65579 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863542AFCDC0000C65579 /* Alamofire */; };
+		AE9863582AFCE09F00C65579 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863572AFCE09F00C65579 /* RxCocoa */; };
+		AE98635A2AFCE09F00C65579 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863592AFCE09F00C65579 /* RxRelay */; };
+		AE98635C2AFCE09F00C65579 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AE98635B2AFCE09F00C65579 /* RxSwift */; };
+		AE98635F2AFCE0D000C65579 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = AE98635E2AFCE0D000C65579 /* Nuke */; };
+		AE9863622AFCE0E400C65579 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863612AFCE0E400C65579 /* SnapKit */; };
+		AE98636B2AFD15D000C65579 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98636A2AFD15D000C65579 /* CoreDataManager.swift */; };
+		AE98636E2AFD181F00C65579 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AE98636D2AFD181F00C65579 /* IQKeyboardManagerSwift */; };
+		AE9863702AFD1A7200C65579 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98636F2AFD1A7200C65579 /* SignInViewController.swift */; };
+		AE9863742AFD1B1300C65579 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863732AFD1B1300C65579 /* EntryViewController.swift */; };
+		AE98637A2AFD206200C65579 /* SignUpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863792AFD206200C65579 /* SignUpRepository.swift */; };
+		AE98637C2AFD21AE00C65579 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98637B2AFD21AE00C65579 /* SignUpViewModel.swift */; };
+		AE98637E2AFD225A00C65579 /* FormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98637D2AFD225A00C65579 /* FormModelValidator.swift */; };
+		AE9863802AFD229B00C65579 /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98637F2AFD229B00C65579 /* SignUpConstants.swift */; };
+		AE9863822AFD291700C65579 /* FormError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863812AFD291700C65579 /* FormError.swift */; };
+		AE9863842AFD316A00C65579 /* SignInRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863832AFD316A00C65579 /* SignInRepository.swift */; };
+		AE9863862AFD324A00C65579 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863852AFD324A00C65579 /* SignInViewModel.swift */; };
+		AE9863882AFD337000C65579 /* SignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863872AFD337000C65579 /* SignInError.swift */; };
+		AE98638B2AFD3DB100C65579 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98638A2AFD3DB100C65579 /* UserDefaultKeys.swift */; };
+		AE98638E2AFD3F8300C65579 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98638D2AFD3F8300C65579 /* UINavigationController+Extension.swift */; };
+		AE9863912AFD405400C65579 /* FormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863902AFD405400C65579 /* FormModelValidatorTests.swift */; };
+		AE9863942AFD418E00C65579 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863932AFD418E00C65579 /* RxCocoa */; };
+		AE9863972AFD4D5800C65579 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863962AFD4D5800C65579 /* ApiClient.swift */; };
+		AE9863992AFD4D7F00C65579 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863982AFD4D7F00C65579 /* NetworkError.swift */; };
+		AE98639D2AFDDCF500C65579 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98639C2AFDDCF500C65579 /* RecipeListViewController.swift */; };
+		AE9863A02AFDDFD800C65579 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98639F2AFDDFD800C65579 /* RecipeListViewModel.swift */; };
+		AE9863A52AFDE05600C65579 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863A42AFDE05600C65579 /* RecipeTableViewCell.swift */; };
+		AE9863A82AFDE39200C65579 /* RecipeListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863A72AFDE39200C65579 /* RecipeListRepository.swift */; };
+		AE9863AA2AFDE49C00C65579 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863A92AFDE49C00C65579 /* String+Extension.swift */; };
+		AE9863AC2AFDE4B000C65579 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863AB2AFDE4B000C65579 /* Array+Extension.swift */; };
+		AE9863B12AFDE58F00C65579 /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B02AFDE58F00C65579 /* RecipeList.swift */; };
+		AE9863B32AFDE6A800C65579 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B22AFDE6A800C65579 /* RecipeDetail.swift */; };
+		AE9863B62AFDEFF000C65579 /* FirstLetterSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B52AFDEFEF00C65579 /* FirstLetterSelectViewController.swift */; };
+		AE9863B92AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +73,6 @@
 		AE9863182AFCD8EE00C65579 /* Recipes-BH-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes-BH-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE98631B2AFCD8EE00C65579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE98631D2AFCD8EE00C65579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE98631F2AFCD8EE00C65579 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AE9863222AFCD8EE00C65579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE9863252AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipes_BH_iOS.xcdatamodel; sourceTree = "<group>"; };
 		AE9863272AFCD8F000C65579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE98632A2AFCD8F000C65579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +82,33 @@
 		AE98633B2AFCD8F000C65579 /* Recipes-BH-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipes-BH-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE98633F2AFCD8F000C65579 /* Recipes_BH_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes_BH_iOSUITests.swift; sourceTree = "<group>"; };
 		AE9863412AFCD8F000C65579 /* Recipes_BH_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes_BH_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE9863512AFCDB2500C65579 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AE98636A2AFD15D000C65579 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AE98636F2AFD1A7200C65579 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AE9863732AFD1B1300C65579 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		AE9863792AFD206200C65579 /* SignUpRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRepository.swift; sourceTree = "<group>"; };
+		AE98637B2AFD21AE00C65579 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		AE98637D2AFD225A00C65579 /* FormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModelValidator.swift; sourceTree = "<group>"; };
+		AE98637F2AFD229B00C65579 /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
+		AE9863812AFD291700C65579 /* FormError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormError.swift; sourceTree = "<group>"; };
+		AE9863832AFD316A00C65579 /* SignInRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRepository.swift; sourceTree = "<group>"; };
+		AE9863852AFD324A00C65579 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		AE9863872AFD337000C65579 /* SignInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInError.swift; sourceTree = "<group>"; };
+		AE98638A2AFD3DB100C65579 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		AE98638D2AFD3F8300C65579 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		AE9863902AFD405400C65579 /* FormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModelValidatorTests.swift; sourceTree = "<group>"; };
+		AE9863962AFD4D5800C65579 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		AE9863982AFD4D7F00C65579 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AE98639C2AFDDCF500C65579 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		AE98639F2AFDDFD800C65579 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		AE9863A42AFDE05600C65579 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		AE9863A72AFDE39200C65579 /* RecipeListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRepository.swift; sourceTree = "<group>"; };
+		AE9863A92AFDE49C00C65579 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		AE9863AB2AFDE4B000C65579 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		AE9863B02AFDE58F00C65579 /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		AE9863B22AFDE6A800C65579 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
+		AE9863B52AFDEFEF00C65579 /* FirstLetterSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLetterSelectViewController.swift; sourceTree = "<group>"; };
+		AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLetterSelectOptionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +116,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE98636E2AFD181F00C65579 /* IQKeyboardManagerSwift in Frameworks */,
+				AE98635A2AFCE09F00C65579 /* RxRelay in Frameworks */,
+				AE9863582AFCE09F00C65579 /* RxCocoa in Frameworks */,
+				AE98635C2AFCE09F00C65579 /* RxSwift in Frameworks */,
+				AE9863622AFCE0E400C65579 /* SnapKit in Frameworks */,
+				AE9863552AFCDC0000C65579 /* Alamofire in Frameworks */,
+				AE98635F2AFCE0D000C65579 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9863942AFD418E00C65579 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +151,7 @@
 				AE9863342AFCD8F000C65579 /* Recipes-BH-iOSTests */,
 				AE98633E2AFCD8F000C65579 /* Recipes-BH-iOSUITests */,
 				AE9863192AFCD8EE00C65579 /* Products */,
+				AE9863922AFD418E00C65579 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +168,15 @@
 		AE98631A2AFCD8EE00C65579 /* Recipes-BH-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AE98638C2AFD3F6E00C65579 /* Extensions */,
+				AE9863892AFD3DA000C65579 /* Constants */,
+				AE9863682AFCF46100C65579 /* Services */,
+				AE9863672AFCF44100C65579 /* Modules */,
 				AE98631B2AFCD8EE00C65579 /* AppDelegate.swift */,
 				AE98631D2AFCD8EE00C65579 /* SceneDelegate.swift */,
-				AE98631F2AFCD8EE00C65579 /* ViewController.swift */,
-				AE9863212AFCD8EE00C65579 /* Main.storyboard */,
 				AE9863272AFCD8F000C65579 /* Assets.xcassets */,
 				AE9863292AFCD8F000C65579 /* LaunchScreen.storyboard */,
 				AE98632C2AFCD8F000C65579 /* Info.plist */,
-				AE9863242AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodeld */,
 			);
 			path = "Recipes-BH-iOS";
 			sourceTree = "<group>";
@@ -116,6 +184,7 @@
 		AE9863342AFCD8F000C65579 /* Recipes-BH-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				AE98638F2AFD403000C65579 /* Models */,
 				AE9863352AFCD8F000C65579 /* Recipes_BH_iOSTests.swift */,
 			);
 			path = "Recipes-BH-iOSTests";
@@ -128,6 +197,204 @@
 				AE9863412AFCD8F000C65579 /* Recipes_BH_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Recipes-BH-iOSUITests";
+			sourceTree = "<group>";
+		};
+		AE98634E2AFCDA5D00C65579 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863502AFCDA7700C65579 /* SignIn */,
+				AE98634F2AFCDA6800C65579 /* SignUp */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AE98634F2AFCDA6800C65579 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863782AFD1E9700C65579 /* Repositories */,
+				AE9863772AFD1E8E00C65579 /* Models */,
+				AE9863512AFCDB2500C65579 /* SignUpViewController.swift */,
+				AE98637B2AFD21AE00C65579 /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		AE9863502AFCDA7700C65579 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863762AFD1E7B00C65579 /* Repositories */,
+				AE9863752AFD1E7500C65579 /* Models */,
+				AE98636F2AFD1A7200C65579 /* SignInViewController.swift */,
+				AE9863852AFD324A00C65579 /* SignInViewModel.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		AE9863672AFCF44100C65579 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863B42AFDEFD100C65579 /* FirstLetterSelect */,
+				AE98639E2AFDDFBD00C65579 /* RecipeList */,
+				AE9863722AFD1AFE00C65579 /* EntryPoint */,
+				AE98634E2AFCDA5D00C65579 /* Authentication */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AE9863682AFCF46100C65579 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863952AFD4D4E00C65579 /* Network */,
+				AE9863692AFCF46F00C65579 /* Core Data */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AE9863692AFCF46F00C65579 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863242AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodeld */,
+				AE98636A2AFD15D000C65579 /* CoreDataManager.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		AE9863722AFD1AFE00C65579 /* EntryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863732AFD1B1300C65579 /* EntryViewController.swift */,
+			);
+			path = EntryPoint;
+			sourceTree = "<group>";
+		};
+		AE9863752AFD1E7500C65579 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863872AFD337000C65579 /* SignInError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE9863762AFD1E7B00C65579 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863832AFD316A00C65579 /* SignInRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AE9863772AFD1E8E00C65579 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE98637D2AFD225A00C65579 /* FormModelValidator.swift */,
+				AE98637F2AFD229B00C65579 /* SignUpConstants.swift */,
+				AE9863812AFD291700C65579 /* FormError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE9863782AFD1E9700C65579 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863792AFD206200C65579 /* SignUpRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AE9863892AFD3DA000C65579 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AE98638A2AFD3DB100C65579 /* UserDefaultKeys.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AE98638C2AFD3F6E00C65579 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE98638D2AFD3F8300C65579 /* UINavigationController+Extension.swift */,
+				AE9863A92AFDE49C00C65579 /* String+Extension.swift */,
+				AE9863AB2AFDE4B000C65579 /* Array+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE98638F2AFD403000C65579 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863902AFD405400C65579 /* FormModelValidatorTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE9863922AFD418E00C65579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE9863952AFD4D4E00C65579 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863962AFD4D5800C65579 /* ApiClient.swift */,
+				AE9863982AFD4D7F00C65579 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AE98639E2AFDDFBD00C65579 /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863AF2AFDE4FA00C65579 /* Models */,
+				AE9863A62AFDE38600C65579 /* Repositories */,
+				AE9863A12AFDE00E00C65579 /* Components */,
+				AE98639C2AFDDCF500C65579 /* RecipeListViewController.swift */,
+				AE98639F2AFDDFD800C65579 /* RecipeListViewModel.swift */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		AE9863A12AFDE00E00C65579 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863A42AFDE05600C65579 /* RecipeTableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AE9863A62AFDE38600C65579 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863A72AFDE39200C65579 /* RecipeListRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AE9863AF2AFDE4FA00C65579 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863B02AFDE58F00C65579 /* RecipeList.swift */,
+				AE9863B22AFDE6A800C65579 /* RecipeDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE9863B42AFDEFD100C65579 /* FirstLetterSelect */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863B72AFDF92200C65579 /* Components */,
+				AE9863B52AFDEFEF00C65579 /* FirstLetterSelectViewController.swift */,
+			);
+			path = FirstLetterSelect;
+			sourceTree = "<group>";
+		};
+		AE9863B72AFDF92200C65579 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +413,15 @@
 			dependencies = (
 			);
 			name = "Recipes-BH-iOS";
+			packageProductDependencies = (
+				AE9863542AFCDC0000C65579 /* Alamofire */,
+				AE9863572AFCE09F00C65579 /* RxCocoa */,
+				AE9863592AFCE09F00C65579 /* RxRelay */,
+				AE98635B2AFCE09F00C65579 /* RxSwift */,
+				AE98635E2AFCE0D000C65579 /* Nuke */,
+				AE9863612AFCE0E400C65579 /* SnapKit */,
+				AE98636D2AFD181F00C65579 /* IQKeyboardManagerSwift */,
+			);
 			productName = "Recipes-BH-iOS";
 			productReference = AE9863182AFCD8EE00C65579 /* Recipes-BH-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -164,6 +440,9 @@
 				AE9863332AFCD8F000C65579 /* PBXTargetDependency */,
 			);
 			name = "Recipes-BH-iOSTests";
+			packageProductDependencies = (
+				AE9863932AFD418E00C65579 /* RxCocoa */,
+			);
 			productName = "Recipes-BH-iOSTests";
 			productReference = AE9863312AFCD8F000C65579 /* Recipes-BH-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -218,6 +497,13 @@
 				Base,
 			);
 			mainGroup = AE98630F2AFCD8EE00C65579;
+			packageReferences = (
+				AE9863532AFCDBFF00C65579 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				AE98635D2AFCE0D000C65579 /* XCRemoteSwiftPackageReference "Nuke" */,
+				AE9863602AFCE0E400C65579 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AE98636C2AFD181F00C65579 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = AE9863192AFCD8EE00C65579 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +522,6 @@
 			files = (
 				AE98632B2AFCD8F000C65579 /* LaunchScreen.storyboard in Resources */,
 				AE9863282AFCD8F000C65579 /* Assets.xcassets in Resources */,
-				AE9863232AFCD8EE00C65579 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +546,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9863202AFCD8EE00C65579 /* ViewController.swift in Sources */,
+				AE98638B2AFD3DB100C65579 /* UserDefaultKeys.swift in Sources */,
+				AE9863B32AFDE6A800C65579 /* RecipeDetail.swift in Sources */,
+				AE9863802AFD229B00C65579 /* SignUpConstants.swift in Sources */,
 				AE9863262AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodeld in Sources */,
+				AE9863A52AFDE05600C65579 /* RecipeTableViewCell.swift in Sources */,
 				AE98631C2AFCD8EE00C65579 /* AppDelegate.swift in Sources */,
+				AE9863702AFD1A7200C65579 /* SignInViewController.swift in Sources */,
+				AE9863B62AFDEFF000C65579 /* FirstLetterSelectViewController.swift in Sources */,
+				AE9863AC2AFDE4B000C65579 /* Array+Extension.swift in Sources */,
+				AE98639D2AFDDCF500C65579 /* RecipeListViewController.swift in Sources */,
+				AE9863742AFD1B1300C65579 /* EntryViewController.swift in Sources */,
+				AE98637C2AFD21AE00C65579 /* SignUpViewModel.swift in Sources */,
+				AE9863842AFD316A00C65579 /* SignInRepository.swift in Sources */,
+				AE9863882AFD337000C65579 /* SignInError.swift in Sources */,
 				AE98631E2AFCD8EE00C65579 /* SceneDelegate.swift in Sources */,
+				AE9863862AFD324A00C65579 /* SignInViewModel.swift in Sources */,
+				AE9863972AFD4D5800C65579 /* ApiClient.swift in Sources */,
+				AE9863A82AFDE39200C65579 /* RecipeListRepository.swift in Sources */,
+				AE98637E2AFD225A00C65579 /* FormModelValidator.swift in Sources */,
+				AE9863AA2AFDE49C00C65579 /* String+Extension.swift in Sources */,
+				AE9863A02AFDDFD800C65579 /* RecipeListViewModel.swift in Sources */,
+				AE9863B12AFDE58F00C65579 /* RecipeList.swift in Sources */,
+				AE9863822AFD291700C65579 /* FormError.swift in Sources */,
+				AE9863B92AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift in Sources */,
+				AE98636B2AFD15D000C65579 /* CoreDataManager.swift in Sources */,
+				AE9863522AFCDB2500C65579 /* SignUpViewController.swift in Sources */,
+				AE98637A2AFD206200C65579 /* SignUpRepository.swift in Sources */,
+				AE98638E2AFD3F8300C65579 /* UINavigationController+Extension.swift in Sources */,
+				AE9863992AFD4D7F00C65579 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9863912AFD405400C65579 /* FormModelValidatorTests.swift in Sources */,
 				AE9863362AFCD8F000C65579 /* Recipes_BH_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +612,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AE9863212AFCD8EE00C65579 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE9863222AFCD8EE00C65579 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AE9863292AFCD8F000C65579 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +749,6 @@
 				INFOPLIST_FILE = "Recipes-BH-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +776,6 @@
 				INFOPLIST_FILE = "Recipes-BH-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,6 +907,92 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE9863532AFCDBFF00C65579 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		AE98635D2AFCE0D000C65579 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		AE9863602AFCE0E400C65579 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		AE98636C2AFD181F00C65579 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE9863542AFCDC0000C65579 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE9863532AFCDBFF00C65579 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		AE9863572AFCE09F00C65579 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		AE9863592AFCE09F00C65579 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		AE98635B2AFCE09F00C65579 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		AE98635E2AFCE0D000C65579 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE98635D2AFCE0D000C65579 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		AE9863612AFCE0E400C65579 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE9863602AFCE0E400C65579 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AE98636D2AFD181F00C65579 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE98636C2AFD181F00C65579 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		AE9863932AFD418E00C65579 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AE9863242AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodeld */ = {
