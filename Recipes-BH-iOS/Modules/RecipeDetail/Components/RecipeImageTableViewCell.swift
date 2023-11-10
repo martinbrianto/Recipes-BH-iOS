@@ -51,10 +51,6 @@ final class RecipeImageTableViewCell: UITableViewCell {
         recipeImageView.snp.makeConstraints { make in
             make.left.right.top.bottom.equalToSuperview()
         }
-        
-        contentView.snp.makeConstraints { make in
-            make.height.equalTo(400)
-        }
     }
 
 }

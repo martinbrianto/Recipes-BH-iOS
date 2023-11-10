@@ -25,10 +25,4 @@ final class SignInRepositoryImpl: SignInRepository {
     func isPasswordValid(forEmail email: String, password: String) -> Bool {
         return coreDataManager.verifyPassword(forEmail: email, password: password)
     }
-    
-    func saveLoggedInUserCredentials(forEmail email: String) {
-        if let userCredential = coreDataManager.getUserCredential(email: email), let userName = userCredential.name {
-            userDefault.set(userName, forKey: UserDefaultKeys.loggedInUserName.rawValue)
-        }
-    }
 }

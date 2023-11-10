@@ -22,6 +22,7 @@ final class RecipeDetailViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(RecipeImageTableViewCell.self, forCellReuseIdentifier: RecipeImageTableViewCell.reuseID)
         tableView.register(IngredientTableViewCell.self, forCellReuseIdentifier: IngredientTableViewCell.reuseID)
         return tableView
@@ -169,7 +170,7 @@ final class RecipeDetailViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension RecipeDetailViewController: UITableViewDataSource {
+extension RecipeDetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.recipesDetail.ingredients.count
     }
@@ -184,6 +185,13 @@ extension RecipeDetailViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IngredientTableViewCell.reuseID) as? IngredientTableViewCell else { return UITableViewCell() }
             cell.configure(with: viewModel.recipesDetail.ingredients[safe: indexPath.row] ?? "", measure: viewModel.recipesDetail.measures[safe: indexPath.row] ?? "")
             return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case CellType.imageCell.rawValue: return 400
+        default: return UITableView.automaticDimension
         }
     }
 }
