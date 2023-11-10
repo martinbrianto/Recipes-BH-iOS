@@ -52,6 +52,11 @@
 		AE9863B92AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */; };
 		AE9863BC2AFE0AE100C65579 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863BB2AFE0AE100C65579 /* ImageViewerViewController.swift */; };
 		AE9863C02AFE79E800C65579 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863BF2AFE79E800C65579 /* UserRepository.swift */; };
+		AE9863C32AFE80E300C65579 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863C22AFE80E300C65579 /* RecipeDetailViewController.swift */; };
+		AE9863C62AFE80FC00C65579 /* RecipeDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863C52AFE80FC00C65579 /* RecipeDetailRepository.swift */; };
+		AE9863C82AFE81FD00C65579 /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863C72AFE81FD00C65579 /* RecipeDetailViewModel.swift */; };
+		AE9863CB2AFE8C4D00C65579 /* RecipeImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863CA2AFE8C4D00C65579 /* RecipeImageTableViewCell.swift */; };
+		AE9863CD2AFE8D8400C65579 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863CC2AFE8D8400C65579 /* IngredientTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +118,11 @@
 		AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLetterSelectOptionTableViewCell.swift; sourceTree = "<group>"; };
 		AE9863BB2AFE0AE100C65579 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
 		AE9863BF2AFE79E800C65579 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		AE9863C22AFE80E300C65579 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		AE9863C52AFE80FC00C65579 /* RecipeDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailRepository.swift; sourceTree = "<group>"; };
+		AE9863C72AFE81FD00C65579 /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
+		AE9863CA2AFE8C4D00C65579 /* RecipeImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImageTableViewCell.swift; sourceTree = "<group>"; };
+		AE9863CC2AFE8D8400C65579 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +248,7 @@
 		AE9863672AFCF44100C65579 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AE9863C12AFE80D200C65579 /* RecipeDetail */,
 				AE9863BA2AFE0AB300C65579 /* ImageViewer */,
 				AE9863B42AFDEFD100C65579 /* FirstLetterSelect */,
 				AE98639E2AFDDFBD00C65579 /* RecipeList */,
@@ -427,6 +438,34 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		AE9863C12AFE80D200C65579 /* RecipeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863C92AFE8BFE00C65579 /* Components */,
+				AE9863C42AFE80E900C65579 /* Repositories */,
+				AE9863C22AFE80E300C65579 /* RecipeDetailViewController.swift */,
+				AE9863C72AFE81FD00C65579 /* RecipeDetailViewModel.swift */,
+			);
+			path = RecipeDetail;
+			sourceTree = "<group>";
+		};
+		AE9863C42AFE80E900C65579 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863C52AFE80FC00C65579 /* RecipeDetailRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AE9863C92AFE8BFE00C65579 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863CA2AFE8C4D00C65579 /* RecipeImageTableViewCell.swift */,
+				AE9863CC2AFE8D8400C65579 /* IngredientTableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -576,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9863C62AFE80FC00C65579 /* RecipeDetailRepository.swift in Sources */,
 				AE98638B2AFD3DB100C65579 /* UserDefaultKeys.swift in Sources */,
 				AE9863B32AFDE6A800C65579 /* RecipeDetail.swift in Sources */,
 				AE9863802AFD229B00C65579 /* SignUpConstants.swift in Sources */,
@@ -583,9 +623,11 @@
 				AE9863A52AFDE05600C65579 /* RecipeTableViewCell.swift in Sources */,
 				AE98631C2AFCD8EE00C65579 /* AppDelegate.swift in Sources */,
 				AE9863702AFD1A7200C65579 /* SignInViewController.swift in Sources */,
+				AE9863CD2AFE8D8400C65579 /* IngredientTableViewCell.swift in Sources */,
 				AE9863B62AFDEFF000C65579 /* FirstLetterSelectViewController.swift in Sources */,
 				AE9863AC2AFDE4B000C65579 /* Array+Extension.swift in Sources */,
 				AE98639D2AFDDCF500C65579 /* RecipeListViewController.swift in Sources */,
+				AE9863C32AFE80E300C65579 /* RecipeDetailViewController.swift in Sources */,
 				AE9863742AFD1B1300C65579 /* EntryViewController.swift in Sources */,
 				AE98637C2AFD21AE00C65579 /* SignUpViewModel.swift in Sources */,
 				AE9863842AFD316A00C65579 /* SignInRepository.swift in Sources */,
@@ -600,6 +642,7 @@
 				AE9863AA2AFDE49C00C65579 /* String+Extension.swift in Sources */,
 				AE9863A02AFDDFD800C65579 /* RecipeListViewModel.swift in Sources */,
 				AE9863B12AFDE58F00C65579 /* RecipeList.swift in Sources */,
+				AE9863CB2AFE8C4D00C65579 /* RecipeImageTableViewCell.swift in Sources */,
 				AE9863822AFD291700C65579 /* FormError.swift in Sources */,
 				AE9863B92AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift in Sources */,
 				AE98636B2AFD15D000C65579 /* CoreDataManager.swift in Sources */,
@@ -607,6 +650,7 @@
 				AE98637A2AFD206200C65579 /* SignUpRepository.swift in Sources */,
 				AE98638E2AFD3F8300C65579 /* UINavigationController+Extension.swift in Sources */,
 				AE9863992AFD4D7F00C65579 /* NetworkError.swift in Sources */,
+				AE9863C82AFE81FD00C65579 /* RecipeDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

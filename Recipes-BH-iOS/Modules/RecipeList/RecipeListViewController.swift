@@ -70,26 +70,7 @@ final class RecipeListViewController: UIViewController {
     
     // MARK: - Private Methods
     
-    private func presentSelectFirstLetterVc() {
-        let vc = FirstLetterSelectViewController(selectedFirstLetterOption: viewModel.recipeFirstLetterParam)
-        
-        vc.rxSelectedOption
-            .asDriver(onErrorDriveWith: .empty())
-            .drive(onNext: { [weak self] selectedOption in
-                self?.viewModel.changeFirstLetterParam(to: selectedOption)
-            })
-            .disposed(by: vc.disposeBag)
-        
-        present(vc, animated: true)
-    }
-    
-    private func presentImageViewer(for imageUrl: String) {
-        let vc = ImageViewerViewController(imageUrl: imageUrl)
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: false)
-    }
-    
-    func presentErrorAlert(title: String, description: String) {
+    private func presentErrorAlert(title: String, description: String) {
         let alert = UIAlertController(title: title, message: description, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
@@ -239,5 +220,34 @@ extension RecipeListViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension RecipeListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cellData = viewModel.recipes[safe: indexPath.row] else { return }
+        goToRecipesDetail(for: cellData.idMeal)
+    }
+}
+
+// MARK: - Navigation
+extension RecipeListViewController {
+    private func goToRecipesDetail(for id: String) {
+        let vc = RecipeDetailViewController(viewModel: RecipeDetailViewModelImpl(recipeId: id))
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func presentSelectFirstLetterVc() {
+        let vc = FirstLetterSelectViewController(selectedFirstLetterOption: viewModel.recipeFirstLetterParam)
+        
+        vc.rxSelectedOption
+            .asDriver(onErrorDriveWith: .empty())
+            .drive(onNext: { [weak self] selectedOption in
+                self?.viewModel.changeFirstLetterParam(to: selectedOption)
+            })
+            .disposed(by: vc.disposeBag)
+        
+        present(vc, animated: true)
+    }
+    
+    private func presentImageViewer(for imageUrl: String) {
+        let vc = ImageViewerViewController(imageUrl: imageUrl)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false)
     }
 }

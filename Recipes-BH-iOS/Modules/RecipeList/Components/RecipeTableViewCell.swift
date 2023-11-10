@@ -63,7 +63,7 @@ final class RecipeTableViewCell: UITableViewCell {
         recipeLabel.text = recipeName
         
         if let thumbnailUrl = URL(string: thumbnailUrl + "/preview") {
-            let options = ImageLoadingOptions(transition: .fadeIn(duration: 0.5))
+            let options = ImageLoadingOptions(placeholder: UIImage(named: "image-placeholder"), transition: .fadeIn(duration: 0.5))
             Nuke.loadImage(with: thumbnailUrl, options: options, into: thumbnailImageView)
         }
     }

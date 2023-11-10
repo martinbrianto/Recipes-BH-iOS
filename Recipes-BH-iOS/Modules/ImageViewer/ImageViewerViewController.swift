@@ -60,6 +60,7 @@ class ImageViewerViewController: UIViewController {
         
         uiImageView.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()
+            make.width.equalTo(300)
         }
         
         backgroundView.snp.makeConstraints { make in
@@ -67,7 +68,7 @@ class ImageViewerViewController: UIViewController {
         }
         
         if let imageUrl = URL(string: imageUrl) {
-            let options = ImageLoadingOptions(transition: .fadeIn(duration: 0.5))
+            let options = ImageLoadingOptions(placeholder: UIImage(named: "image-placeholder"), transition: .fadeIn(duration: 0.5))
             Nuke.loadImage(with: imageUrl, options: options, into: uiImageView)
         }
     }
