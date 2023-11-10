@@ -18,14 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        //TODO: handle logged in
-        if let loggedInUserName = UserDefaults.standard.string(forKey: UserDefaultKeys.loggedInUserName.rawValue) {
-            print(loggedInUserName)
+        // Check if user logged in
+        let vc: UIViewController
+        if isUserLoggedIn() {
+            vc = RecipeListViewController()
         } else {
-            
+            vc = EntryViewController()
         }
         
-        let vc = RecipeListViewController()
         let navigationController = UINavigationController(rootViewController: vc)
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = navigationController
@@ -35,8 +35,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
     }
     
+    func isUserLoggedIn() -> Bool {
+        if let _ = UserDefaults.standard.string(forKey: UserDefaultKeys.loggedInUserName.rawValue) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     func logOutUser() {
         let vc = EntryViewController()
+        let navigationController = UINavigationController(rootViewController: vc)
+        
+        // Update the root view controller for the current window
+        window?.rootViewController = navigationController
+    }
+    
+    func logInUser() {
+        let vc = RecipeListViewController()
         let navigationController = UINavigationController(rootViewController: vc)
         
         // Update the root view controller for the current window

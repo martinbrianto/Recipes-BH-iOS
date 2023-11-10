@@ -142,7 +142,9 @@ class SignInViewController: UIViewController {
                     }
                     
                 case .success:
-                    print("success")
+                    if let sceneDelegate = self?.view.window?.windowScene?.delegate as? SceneDelegate {
+                        sceneDelegate.logInUser()
+                    }
                     self?.errorLabel.isHidden = true
                 }
             })
