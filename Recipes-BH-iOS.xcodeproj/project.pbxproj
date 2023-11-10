@@ -51,6 +51,7 @@
 		AE9863B62AFDEFF000C65579 /* FirstLetterSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B52AFDEFEF00C65579 /* FirstLetterSelectViewController.swift */; };
 		AE9863B92AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */; };
 		AE9863BC2AFE0AE100C65579 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863BB2AFE0AE100C65579 /* ImageViewerViewController.swift */; };
+		AE9863C02AFE79E800C65579 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863BF2AFE79E800C65579 /* UserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		AE9863B52AFDEFEF00C65579 /* FirstLetterSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLetterSelectViewController.swift; sourceTree = "<group>"; };
 		AE9863B82AFDF94100C65579 /* FirstLetterSelectOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLetterSelectOptionTableViewCell.swift; sourceTree = "<group>"; };
 		AE9863BB2AFE0AE100C65579 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
+		AE9863BF2AFE79E800C65579 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		AE98631A2AFCD8EE00C65579 /* Recipes-BH-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AE9863BD2AFE79BB00C65579 /* Common */,
 				AE98638C2AFD3F6E00C65579 /* Extensions */,
 				AE9863892AFD3DA000C65579 /* Constants */,
 				AE9863682AFCF46100C65579 /* Services */,
@@ -408,6 +411,22 @@
 			path = ImageViewer;
 			sourceTree = "<group>";
 		};
+		AE9863BD2AFE79BB00C65579 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863BE2AFE79C000C65579 /* Repositories */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AE9863BE2AFE79C000C65579 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863BF2AFE79E800C65579 /* UserRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -573,6 +592,7 @@
 				AE9863882AFD337000C65579 /* SignInError.swift in Sources */,
 				AE98631E2AFCD8EE00C65579 /* SceneDelegate.swift in Sources */,
 				AE9863862AFD324A00C65579 /* SignInViewModel.swift in Sources */,
+				AE9863C02AFE79E800C65579 /* UserRepository.swift in Sources */,
 				AE9863972AFD4D5800C65579 /* ApiClient.swift in Sources */,
 				AE9863A82AFDE39200C65579 /* RecipeListRepository.swift in Sources */,
 				AE9863BC2AFE0AE100C65579 /* ImageViewerViewController.swift in Sources */,

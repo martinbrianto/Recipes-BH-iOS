@@ -15,21 +15,25 @@ enum RecipeListViewState {
 }
 
 protocol RecipeListViewModel {
-    init(repository: RecipeListRepository)
+    init(repository: RecipeListRepository, userRepository: UserRepository)
     
     var recipes: [RecipeDetail] { get }
     var recipeFirstLetterParam: Character { get }
     var rxViewState: Observable<RecipeListViewState> { get }
+    var rxUserDidLogout: Observable<Void> { get }
     var rxFirstLetterParam: Observable<Character> { get }
     
     func changeFirstLetterParam(to character: Character)
     func getRecipeList()
+    func logOutUser()
+    func getUserName() -> String
 }
 
 final class RecipeListViewModelImpl: RecipeListViewModel {
     
     // MARK: - Variables
     private let repository: RecipeListRepository
+    private let userRepository: UserRepository
     private var recipeListDisposeBag = DisposeBag()
     
     var recipeFirstLetterParam: Character = "A" {
@@ -40,8 +44,9 @@ final class RecipeListViewModelImpl: RecipeListViewModel {
     var recipes: [RecipeDetail] = []
     
     // MARK: - Inits
-    init(repository: RecipeListRepository = RecipeListRepositoryImpl()) {
+    init(repository: RecipeListRepository = RecipeListRepositoryImpl(), userRepository: UserRepository = UserRepositoryImpl()) {
         self.repository = repository
+        self.userRepository = userRepository
     }
     
     // MARK: - Outputs
@@ -51,6 +56,9 @@ final class RecipeListViewModelImpl: RecipeListViewModel {
     
     private let _rxFirstLetterParam = PublishSubject<Character>()
     var rxFirstLetterParam: Observable<Character> { _rxFirstLetterParam }
+    
+    private let _rxUserDidLogout = PublishSubject<Void>()
+    var rxUserDidLogout: Observable<Void> { _rxUserDidLogout }
     
     // MARK: - Inputs
     func changeFirstLetterParam(to character: Character) {
@@ -75,5 +83,14 @@ final class RecipeListViewModelImpl: RecipeListViewModel {
                 }
             })
             .disposed(by: recipeListDisposeBag)
+    }
+    
+    func getUserName() -> String {
+        return userRepository.getUserCredential() ?? ""
+    }
+    
+    func logOutUser() {
+        userRepository.removeUserCredentials()
+        _rxUserDidLogout.onNext(())
     }
 }

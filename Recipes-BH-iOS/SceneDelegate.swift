@@ -34,6 +34,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         
     }
+    
+    func logOutUser() {
+        let vc = EntryViewController()
+        let navigationController = UINavigationController(rootViewController: vc)
+        
+        // Update the root view controller for the current window
+        window?.rootViewController = navigationController
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

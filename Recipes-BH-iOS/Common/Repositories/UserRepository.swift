@@ -1,18 +1,21 @@
 //
-//  SignInRepository.swift
+//  UserRepository.swift
 //  Recipes-BH-iOS
 //
-//  Created by Martin Brianto on 09/11/23.
+//  Created by Martin Brianto on 10/11/23.
 //
 
 import Foundation
 
-protocol SignInRepository {
+protocol UserRepository {
     init(coreDataManager: CoreDataManager, userDefault: UserDefaults)
-    func isPasswordValid(forEmail email: String, password: String) -> Bool
+    func saveUserCredentials(forEmail email: String)
+    func removeUserCredentials()
+    func getUserCredential() -> String?
+    
 }
 
-final class SignInRepositoryImpl: SignInRepository {
+final class UserRepositoryImpl: UserRepository {
     
     private let coreDataManager: CoreDataManager
     private let userDefault: UserDefaults
@@ -22,13 +25,17 @@ final class SignInRepositoryImpl: SignInRepository {
         self.coreDataManager = coreDataManager
     }
     
-    func isPasswordValid(forEmail email: String, password: String) -> Bool {
-        return coreDataManager.verifyPassword(forEmail: email, password: password)
-    }
-    
-    func saveLoggedInUserCredentials(forEmail email: String) {
+    func saveUserCredentials(forEmail email: String) {
         if let userCredential = coreDataManager.getUserCredential(email: email), let userName = userCredential.name {
             userDefault.set(userName, forKey: UserDefaultKeys.loggedInUserName.rawValue)
         }
+    }
+    
+    func removeUserCredentials() {
+        userDefault.removeObject(forKey: UserDefaultKeys.loggedInUserName.rawValue)
+    }
+    
+    func getUserCredential() -> String? {
+        return userDefault.string(forKey: UserDefaultKeys.loggedInUserName.rawValue)
     }
 }

@@ -41,6 +41,7 @@ final class RecipeListViewController: UIViewController {
     }()
     
     private let changeRecipeLetterBarButton = UIBarButtonItem(image: UIImage(systemName: "textformat"))
+    private let logOutBarButton = UIBarButtonItem(title: "Log out")
     
     // MARK: - Variables
     
@@ -54,6 +55,7 @@ final class RecipeListViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         setupView()
         setupBinding()
+        viewModel.getRecipeList()
     }
     
     required init?(coder: NSCoder) {
@@ -64,10 +66,9 @@ final class RecipeListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.getRecipeList()
     }
     
-    // MARK: - Methods
+    // MARK: - Private Methods
     
     private func presentSelectFirstLetterVc() {
         let vc = FirstLetterSelectViewController(selectedFirstLetterOption: viewModel.recipeFirstLetterParam)
@@ -88,6 +89,13 @@ final class RecipeListViewController: UIViewController {
         present(vc, animated: false)
     }
     
+    func presentErrorAlert(title: String, description: String) {
+        let alert = UIAlertController(title: title, message: description, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
     private func setEmptyView(isShowing: Bool) {
         emptyView.isHidden = !isShowing
         tableView.isHidden = isShowing
@@ -103,11 +111,26 @@ final class RecipeListViewController: UIViewController {
         activityView.isHidden = !isShowing
     }
     
+    func showLogoutConfirmationAlert() {
+        let alert = UIAlertController(title: "Warning", message: "Are you sure you want to log out?", preferredStyle: .alert)
+        
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { [weak self] _ in
+            self?.viewModel.logOutUser()
+        }
+        let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        
+        alert.addAction(yesAction)
+        alert.addAction(noAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
     // MARK: - Setup
     
     private func setupView() {
-        navigationItem.title = "Recipe List"
+        navigationItem.title = "Welcome, \(viewModel.getUserName())"
         navigationItem.rightBarButtonItem = changeRecipeLetterBarButton
+        navigationItem.leftBarButtonItem = logOutBarButton
         
         view.backgroundColor = .white
         
@@ -150,7 +173,7 @@ final class RecipeListViewController: UIViewController {
                     self.tableView.reloadData()
                 case let .error(errorDesc):
                     self.setLoadingView(isShowing: false)
-                    print(errorDesc)
+                    self.presentErrorAlert(title: "Error Occured", description: errorDesc)
                 }
             })
             .disposed(by: disposeBag)
@@ -162,10 +185,26 @@ final class RecipeListViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+        logOutBarButton.rx.tap
+            .asDriver(onErrorDriveWith: .empty())
+            .drive(onNext: { [weak self] in
+                self?.showLogoutConfirmationAlert()
+            })
+            .disposed(by: disposeBag)
+        
         viewModel.rxFirstLetterParam
             .asDriver(onErrorDriveWith: .empty())
             .drive(onNext: { [weak self] firstLetter in
                 self?.firstLetterTitleLabel.text = "Showing recipes that starts from letter → \(firstLetter)"
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.rxUserDidLogout
+            .asDriver(onErrorDriveWith: .empty())
+            .drive(onNext: { [weak self] in
+                if let sceneDelegate = self?.view.window?.windowScene?.delegate as? SceneDelegate {
+                    sceneDelegate.logOutUser()
+                }
             })
             .disposed(by: disposeBag)
     }
