@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D9992217CB4CAB7ADA371EF /* Pods_Recipes_BH_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11276D4B6F1207D51623E555 /* Pods_Recipes_BH_iOSTests.framework */; };
+		4B407EAB7C0A603B68506397 /* Pods_Recipes_BH_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1AB0AE907A113823683750 /* Pods_Recipes_BH_iOS.framework */; };
 		AE98631C2AFCD8EE00C65579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98631B2AFCD8EE00C65579 /* AppDelegate.swift */; };
 		AE98631E2AFCD8EE00C65579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98631D2AFCD8EE00C65579 /* SceneDelegate.swift */; };
 		AE9863262AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9863242AFCD8EE00C65579 /* Recipes_BH_iOS.xcdatamodeld */; };
 		AE9863282AFCD8F000C65579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9863272AFCD8F000C65579 /* Assets.xcassets */; };
 		AE98632B2AFCD8F000C65579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9863292AFCD8F000C65579 /* LaunchScreen.storyboard */; };
-		AE9863362AFCD8F000C65579 /* Recipes_BH_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863352AFCD8F000C65579 /* Recipes_BH_iOSTests.swift */; };
 		AE9863402AFCD8F000C65579 /* Recipes_BH_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98633F2AFCD8F000C65579 /* Recipes_BH_iOSUITests.swift */; };
 		AE9863422AFCD8F000C65579 /* Recipes_BH_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863412AFCD8F000C65579 /* Recipes_BH_iOSUITestsLaunchTests.swift */; };
 		AE9863522AFCDB2500C65579 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863512AFCDB2500C65579 /* SignUpViewController.swift */; };
 		AE9863552AFCDC0000C65579 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863542AFCDC0000C65579 /* Alamofire */; };
-		AE9863582AFCE09F00C65579 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863572AFCE09F00C65579 /* RxCocoa */; };
-		AE98635A2AFCE09F00C65579 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863592AFCE09F00C65579 /* RxRelay */; };
-		AE98635C2AFCE09F00C65579 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AE98635B2AFCE09F00C65579 /* RxSwift */; };
 		AE98635F2AFCE0D000C65579 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = AE98635E2AFCE0D000C65579 /* Nuke */; };
 		AE9863622AFCE0E400C65579 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863612AFCE0E400C65579 /* SnapKit */; };
 		AE98636B2AFD15D000C65579 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98636A2AFD15D000C65579 /* CoreDataManager.swift */; };
@@ -37,7 +35,6 @@
 		AE98638B2AFD3DB100C65579 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98638A2AFD3DB100C65579 /* UserDefaultKeys.swift */; };
 		AE98638E2AFD3F8300C65579 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98638D2AFD3F8300C65579 /* UINavigationController+Extension.swift */; };
 		AE9863912AFD405400C65579 /* FormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863902AFD405400C65579 /* FormModelValidatorTests.swift */; };
-		AE9863942AFD418E00C65579 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AE9863932AFD418E00C65579 /* RxCocoa */; };
 		AE9863972AFD4D5800C65579 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863962AFD4D5800C65579 /* ApiClient.swift */; };
 		AE9863992AFD4D7F00C65579 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863982AFD4D7F00C65579 /* NetworkError.swift */; };
 		AE98639D2AFDDCF500C65579 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98639C2AFDDCF500C65579 /* RecipeListViewController.swift */; };
@@ -57,6 +54,12 @@
 		AE9863C82AFE81FD00C65579 /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863C72AFE81FD00C65579 /* RecipeDetailViewModel.swift */; };
 		AE9863CB2AFE8C4D00C65579 /* RecipeImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863CA2AFE8C4D00C65579 /* RecipeImageTableViewCell.swift */; };
 		AE9863CD2AFE8D8400C65579 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863CC2AFE8D8400C65579 /* IngredientTableViewCell.swift */; };
+		AE9863D02AFE999C00C65579 /* RecipeListRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863CF2AFE999C00C65579 /* RecipeListRepositoryTest.swift */; };
+		AE9863D32AFE99AE00C65579 /* MockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9863D22AFE99AE00C65579 /* MockApiClient.swift */; };
+		AEFE4AD72AFFBDC100EF87A7 /* RecipeListRepositoryIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE4AD62AFFBDC100EF87A7 /* RecipeListRepositoryIntegrationTest.swift */; };
+		AEFE4AD92AFFC00200EF87A7 /* RecipeDetailRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE4AD82AFFC00200EF87A7 /* RecipeDetailRepositoryTest.swift */; };
+		AEFE4ADB2AFFC5B800EF87A7 /* RecipeDetailRepositoryIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE4ADA2AFFC5B800EF87A7 /* RecipeDetailRepositoryIntegrationTest.swift */; };
+		DACF4B1D3A0917F84C020A51 /* Pods_Recipes_BH_iOS_Recipes_BH_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223EE358564F2971A56C6DC4 /* Pods_Recipes_BH_iOS_Recipes_BH_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +79,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AE98640B2AFEA39D00C65579 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		11276D4B6F1207D51623E555 /* Pods_Recipes_BH_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipes_BH_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		223EE358564F2971A56C6DC4 /* Pods_Recipes_BH_iOS_Recipes_BH_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipes_BH_iOS_Recipes_BH_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4F2A2602F39B07C403B86C /* Pods-Recipes-BH-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-BH-iOS.release.xcconfig"; path = "Target Support Files/Pods-Recipes-BH-iOS/Pods-Recipes-BH-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		751EBAB91E0E35AE0DA6D3C4 /* Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0C2AAE956743094370EB2BA /* Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AE9863182AFCD8EE00C65579 /* Recipes-BH-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes-BH-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE98631B2AFCD8EE00C65579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE98631D2AFCD8EE00C65579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +106,6 @@
 		AE98632A2AFCD8F000C65579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE98632C2AFCD8F000C65579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9863312AFCD8F000C65579 /* Recipes-BH-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipes-BH-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE9863352AFCD8F000C65579 /* Recipes_BH_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes_BH_iOSTests.swift; sourceTree = "<group>"; };
 		AE98633B2AFCD8F000C65579 /* Recipes-BH-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipes-BH-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE98633F2AFCD8F000C65579 /* Recipes_BH_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes_BH_iOSUITests.swift; sourceTree = "<group>"; };
 		AE9863412AFCD8F000C65579 /* Recipes_BH_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes_BH_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -123,6 +143,15 @@
 		AE9863C72AFE81FD00C65579 /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
 		AE9863CA2AFE8C4D00C65579 /* RecipeImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImageTableViewCell.swift; sourceTree = "<group>"; };
 		AE9863CC2AFE8D8400C65579 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
+		AE9863CF2AFE999C00C65579 /* RecipeListRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRepositoryTest.swift; sourceTree = "<group>"; };
+		AE9863D22AFE99AE00C65579 /* MockApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiClient.swift; sourceTree = "<group>"; };
+		AEFE4AD62AFFBDC100EF87A7 /* RecipeListRepositoryIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRepositoryIntegrationTest.swift; sourceTree = "<group>"; };
+		AEFE4AD82AFFC00200EF87A7 /* RecipeDetailRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailRepositoryTest.swift; sourceTree = "<group>"; };
+		AEFE4ADA2AFFC5B800EF87A7 /* RecipeDetailRepositoryIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailRepositoryIntegrationTest.swift; sourceTree = "<group>"; };
+		C8417938AD442C525FFD42D5 /* Pods-Recipes-BH-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-BH-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Recipes-BH-iOSTests/Pods-Recipes-BH-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		DFDC45D16E033FDEDAED8B54 /* Pods-Recipes-BH-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-BH-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Recipes-BH-iOS/Pods-Recipes-BH-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E9EC888B4EA9D0B61EED3978 /* Pods-Recipes-BH-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-BH-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Recipes-BH-iOSTests/Pods-Recipes-BH-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1AB0AE907A113823683750 /* Pods_Recipes_BH_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipes_BH_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE98636E2AFD181F00C65579 /* IQKeyboardManagerSwift in Frameworks */,
-				AE98635A2AFCE09F00C65579 /* RxRelay in Frameworks */,
-				AE9863582AFCE09F00C65579 /* RxCocoa in Frameworks */,
-				AE98635C2AFCE09F00C65579 /* RxSwift in Frameworks */,
 				AE9863622AFCE0E400C65579 /* SnapKit in Frameworks */,
 				AE9863552AFCDC0000C65579 /* Alamofire in Frameworks */,
 				AE98635F2AFCE0D000C65579 /* Nuke in Frameworks */,
+				4B407EAB7C0A603B68506397 /* Pods_Recipes_BH_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9863942AFD418E00C65579 /* RxCocoa in Frameworks */,
+				2D9992217CB4CAB7ADA371EF /* Pods_Recipes_BH_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,12 +179,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACF4B1D3A0917F84C020A51 /* Pods_Recipes_BH_iOS_Recipes_BH_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51E5AAB71CAD72941147830D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFDC45D16E033FDEDAED8B54 /* Pods-Recipes-BH-iOS.debug.xcconfig */,
+				2B4F2A2602F39B07C403B86C /* Pods-Recipes-BH-iOS.release.xcconfig */,
+				751EBAB91E0E35AE0DA6D3C4 /* Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.debug.xcconfig */,
+				A0C2AAE956743094370EB2BA /* Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.release.xcconfig */,
+				E9EC888B4EA9D0B61EED3978 /* Pods-Recipes-BH-iOSTests.debug.xcconfig */,
+				C8417938AD442C525FFD42D5 /* Pods-Recipes-BH-iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE98630F2AFCD8EE00C65579 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +207,7 @@
 				AE98633E2AFCD8F000C65579 /* Recipes-BH-iOSUITests */,
 				AE9863192AFCD8EE00C65579 /* Products */,
 				AE9863922AFD418E00C65579 /* Frameworks */,
+				51E5AAB71CAD72941147830D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,8 +241,9 @@
 		AE9863342AFCD8F000C65579 /* Recipes-BH-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				AE9863D12AFE999E00C65579 /* Mocks */,
+				AE9863CE2AFE992300C65579 /* Repositories */,
 				AE98638F2AFD403000C65579 /* Models */,
-				AE9863352AFCD8F000C65579 /* Recipes_BH_iOSTests.swift */,
 			);
 			path = "Recipes-BH-iOSTests";
 			sourceTree = "<group>";
@@ -347,6 +390,9 @@
 		AE9863922AFD418E00C65579 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE1AB0AE907A113823683750 /* Pods_Recipes_BH_iOS.framework */,
+				223EE358564F2971A56C6DC4 /* Pods_Recipes_BH_iOS_Recipes_BH_iOSUITests.framework */,
+				11276D4B6F1207D51623E555 /* Pods_Recipes_BH_iOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -466,6 +512,25 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		AE9863CE2AFE992300C65579 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863CF2AFE999C00C65579 /* RecipeListRepositoryTest.swift */,
+				AEFE4AD62AFFBDC100EF87A7 /* RecipeListRepositoryIntegrationTest.swift */,
+				AEFE4AD82AFFC00200EF87A7 /* RecipeDetailRepositoryTest.swift */,
+				AEFE4ADA2AFFC5B800EF87A7 /* RecipeDetailRepositoryIntegrationTest.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AE9863D12AFE999E00C65579 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AE9863D22AFE99AE00C65579 /* MockApiClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -473,9 +538,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE9863452AFCD8F000C65579 /* Build configuration list for PBXNativeTarget "Recipes-BH-iOS" */;
 			buildPhases = (
+				CF31C4CAAE1DE16950F02E1B /* [CP] Check Pods Manifest.lock */,
 				AE9863142AFCD8EE00C65579 /* Sources */,
 				AE9863152AFCD8EE00C65579 /* Frameworks */,
 				AE9863162AFCD8EE00C65579 /* Resources */,
+				16E9621551DEB96DA4493D07 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -484,9 +551,6 @@
 			name = "Recipes-BH-iOS";
 			packageProductDependencies = (
 				AE9863542AFCDC0000C65579 /* Alamofire */,
-				AE9863572AFCE09F00C65579 /* RxCocoa */,
-				AE9863592AFCE09F00C65579 /* RxRelay */,
-				AE98635B2AFCE09F00C65579 /* RxSwift */,
 				AE98635E2AFCE0D000C65579 /* Nuke */,
 				AE9863612AFCE0E400C65579 /* SnapKit */,
 				AE98636D2AFD181F00C65579 /* IQKeyboardManagerSwift */,
@@ -499,9 +563,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE9863482AFCD8F000C65579 /* Build configuration list for PBXNativeTarget "Recipes-BH-iOSTests" */;
 			buildPhases = (
+				6E5FDBA07E547CE815AA1F3F /* [CP] Check Pods Manifest.lock */,
 				AE98632D2AFCD8F000C65579 /* Sources */,
 				AE98632E2AFCD8F000C65579 /* Frameworks */,
 				AE98632F2AFCD8F000C65579 /* Resources */,
+				AE98640B2AFEA39D00C65579 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -509,9 +575,6 @@
 				AE9863332AFCD8F000C65579 /* PBXTargetDependency */,
 			);
 			name = "Recipes-BH-iOSTests";
-			packageProductDependencies = (
-				AE9863932AFD418E00C65579 /* RxCocoa */,
-			);
 			productName = "Recipes-BH-iOSTests";
 			productReference = AE9863312AFCD8F000C65579 /* Recipes-BH-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -520,9 +583,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE98634B2AFCD8F000C65579 /* Build configuration list for PBXNativeTarget "Recipes-BH-iOSUITests" */;
 			buildPhases = (
+				D334008B55BE922A3FFAD454 /* [CP] Check Pods Manifest.lock */,
 				AE9863372AFCD8F000C65579 /* Sources */,
 				AE9863382AFCD8F000C65579 /* Frameworks */,
 				AE9863392AFCD8F000C65579 /* Resources */,
+				EDFCD6A9AB413456BFA36693 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -568,7 +633,6 @@
 			mainGroup = AE98630F2AFCD8EE00C65579;
 			packageReferences = (
 				AE9863532AFCDBFF00C65579 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				AE98635D2AFCE0D000C65579 /* XCRemoteSwiftPackageReference "Nuke" */,
 				AE9863602AFCE0E400C65579 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				AE98636C2AFD181F00C65579 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
@@ -609,6 +673,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16E9621551DEB96DA4493D07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Recipes-BH-iOS/Pods-Recipes-BH-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Recipes-BH-iOS/Pods-Recipes-BH-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Recipes-BH-iOS/Pods-Recipes-BH-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E5FDBA07E547CE815AA1F3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Recipes-BH-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF31C4CAAE1DE16950F02E1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Recipes-BH-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D334008B55BE922A3FFAD454 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDFCD6A9AB413456BFA36693 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests/Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE9863142AFCD8EE00C65579 /* Sources */ = {
@@ -658,8 +825,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFE4AD92AFFC00200EF87A7 /* RecipeDetailRepositoryTest.swift in Sources */,
+				AEFE4AD72AFFBDC100EF87A7 /* RecipeListRepositoryIntegrationTest.swift in Sources */,
 				AE9863912AFD405400C65579 /* FormModelValidatorTests.swift in Sources */,
-				AE9863362AFCD8F000C65579 /* Recipes_BH_iOSTests.swift in Sources */,
+				AE9863D32AFE99AE00C65579 /* MockApiClient.swift in Sources */,
+				AE9863D02AFE999C00C65579 /* RecipeListRepositoryTest.swift in Sources */,
+				AEFE4ADB2AFFC5B800EF87A7 /* RecipeDetailRepositoryIntegrationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +924,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -806,6 +978,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -815,6 +988,7 @@
 		};
 		AE9863462AFCD8F000C65579 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDC45D16E033FDEDAED8B54 /* Pods-Recipes-BH-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -842,6 +1016,7 @@
 		};
 		AE9863472AFCD8F000C65579 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4F2A2602F39B07C403B86C /* Pods-Recipes-BH-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -869,6 +1044,7 @@
 		};
 		AE9863492AFCD8F000C65579 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9EC888B4EA9D0B61EED3978 /* Pods-Recipes-BH-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -889,6 +1065,7 @@
 		};
 		AE98634A2AFCD8F000C65579 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8417938AD442C525FFD42D5 /* Pods-Recipes-BH-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -909,6 +1086,7 @@
 		};
 		AE98634C2AFCD8F000C65579 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751EBAB91E0E35AE0DA6D3C4 /* Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -927,6 +1105,7 @@
 		};
 		AE98634D2AFCD8F000C65579 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C2AAE956743094370EB2BA /* Pods-Recipes-BH-iOS-Recipes-BH-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -993,14 +1172,6 @@
 				kind = branch;
 			};
 		};
-		AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		AE98635D2AFCE0D000C65579 /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke";
@@ -1033,21 +1204,6 @@
 			package = AE9863532AFCDBFF00C65579 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		AE9863572AFCE09F00C65579 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		AE9863592AFCE09F00C65579 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		AE98635B2AFCE09F00C65579 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
 		AE98635E2AFCE0D000C65579 /* Nuke */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AE98635D2AFCE0D000C65579 /* XCRemoteSwiftPackageReference "Nuke" */;
@@ -1062,11 +1218,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AE98636C2AFD181F00C65579 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
-		};
-		AE9863932AFD418E00C65579 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AE9863562AFCE09F00C65579 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 

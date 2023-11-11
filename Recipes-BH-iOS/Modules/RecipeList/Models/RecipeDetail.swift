@@ -75,7 +75,7 @@ struct RecipeDetail: Codable {
     }
 }
 
-extension RecipeDetail {
+extension RecipeDetail: Equatable {
     static let emptyRecipe = RecipeDetail(
         idMeal: "",
         strMeal: "",

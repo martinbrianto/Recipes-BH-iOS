@@ -30,7 +30,7 @@ final class RecipeDetailRepositoryImpl: RecipeDetailRepository {
             .flatMap{ jsonString -> Observable<RecipeList> in
                 jsonString.toRxCodable()
             }
-            .compactMap({$0.meals?.first})
+            .map({$0.meals?.first ?? .emptyRecipe})
     }
     
 }
